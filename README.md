@@ -20,6 +20,37 @@ This frames the task as a **representation learning problem**, where micro-level
 
 ---
 
+## Project Structure
+
+```
+InkOrPixel/
+│
+├── main.py
+├── requirements.txt
+├── README.md
+│
+├── src/
+│   ├── __init__.py
+│   ├── train.py
+│   ├── evaluate.py
+│   ├── dataset.py
+│   ├── model.py
+│   └── config.py
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── outputs/
+│   ├── models/
+│   └── plots/
+│
+├── notebooks/
+│
+└── assets/
+```
+---
+
 ## 🎯 Objective
 
 To design and train deep learning models that classify artistic medium based on texture-level characteristics.
