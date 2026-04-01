@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d082759-bb40-442b-a8b0-d5055a14ad91" name="Changes" comment="Made an alteration to the README file.">
+    <list default="true" id="0d082759-bb40-442b-a8b0-d5055a14ad91" name="Changes" comment="1. Initialized the InkOrPixel project repository and created a Python virtual environment (`.venv`).&#10;2. Added a README.md describing the goal of the project (classifying traditional vs digital artwork using CNNs).&#10;3. Created a requirements.txt file to manage project dependencies.&#10;4. Implemented core project scripts: `main.py`, `train.py`, `evaluate.py`, `dataset.py`, `model.py`, and `config.py`.&#10;5. Set up a clean project directory structure including `data/`, `outputs/`, `notebooks/`, and `assets/`.&#10;6. Organized data folders into **raw and processed datasets.&#10;7. Refactored the codebase into a `src/` module structure to improve organization and scalability.&#10;8. Updated the README with a project structure section** documenting the repository layout.&#10;9. Added a .gitignore file to exclude the virtual environment and unnecessary files from version control.&#10;10. Verified that the project runs successfully through the main execution script.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1771894857896</updated>
-      <workItem from="1771894858942" duration="6159000" />
+      <workItem from="1771894858942" duration="8498000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: set up base project structure">
       <option name="closed" value="true" />
@@ -124,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771896605006</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1. Initialized the InkOrPixel project repository and created a Python virtual environment (`.venv`).&#10;2. Added a README.md describing the goal of the project (classifying traditional vs digital artwork using CNNs).&#10;3. Created a requirements.txt file to manage project dependencies.&#10;4. Implemented core project scripts: `main.py`, `train.py`, `evaluate.py`, `dataset.py`, `model.py`, and `config.py`.&#10;5. Set up a clean project directory structure including `data/`, `outputs/`, `notebooks/`, and `assets/`.&#10;6. Organized data folders into **raw and processed datasets.&#10;7. Refactored the codebase into a `src/` module structure to improve organization and scalability.&#10;8. Updated the README with a project structure section** documenting the repository layout.&#10;9. Added a .gitignore file to exclude the virtual environment and unnecessary files from version control.&#10;10. Verified that the project runs successfully through the main execution script.">
+      <option name="closed" value="true" />
+      <created>1773436624687</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773436624688</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +150,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit: set up base project structure" />
     <MESSAGE value="Made an alteration to the README file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made an alteration to the README file." />
+    <MESSAGE value="1. Initialized the InkOrPixel project repository and created a Python virtual environment (`.venv`).&#10;2. Added a README.md describing the goal of the project (classifying traditional vs digital artwork using CNNs).&#10;3. Created a requirements.txt file to manage project dependencies.&#10;4. Implemented core project scripts: `main.py`, `train.py`, `evaluate.py`, `dataset.py`, `model.py`, and `config.py`.&#10;5. Set up a clean project directory structure including `data/`, `outputs/`, `notebooks/`, and `assets/`.&#10;6. Organized data folders into **raw and processed datasets.&#10;7. Refactored the codebase into a `src/` module structure to improve organization and scalability.&#10;8. Updated the README with a project structure section** documenting the repository layout.&#10;9. Added a .gitignore file to exclude the virtual environment and unnecessary files from version control.&#10;10. Verified that the project runs successfully through the main execution script." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Initialized the InkOrPixel project repository and created a Python virtual environment (`.venv`).&#10;2. Added a README.md describing the goal of the project (classifying traditional vs digital artwork using CNNs).&#10;3. Created a requirements.txt file to manage project dependencies.&#10;4. Implemented core project scripts: `main.py`, `train.py`, `evaluate.py`, `dataset.py`, `model.py`, and `config.py`.&#10;5. Set up a clean project directory structure including `data/`, `outputs/`, `notebooks/`, and `assets/`.&#10;6. Organized data folders into **raw and processed datasets.&#10;7. Refactored the codebase into a `src/` module structure to improve organization and scalability.&#10;8. Updated the README with a project structure section** documenting the repository layout.&#10;9. Added a .gitignore file to exclude the virtual environment and unnecessary files from version control.&#10;10. Verified that the project runs successfully through the main execution script." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/InkOrPixel$main.coverage" NAME="main Coverage Results" MODIFIED="1773436359917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
