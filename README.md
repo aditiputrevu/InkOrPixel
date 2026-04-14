@@ -1,22 +1,20 @@
-# InkOrPixel 🎨🧠  
+# InkOrPixel 🎨🧠
 ### Teaching a Neural Network to See the Difference Between Paper and Pixels
 
 ---
 
 ## 📌 Overview
 
-**InkOrPixel** is a deep learning project that classifies artwork as **Traditional** or **Digital** using Convolutional Neural Networks.
+**InkOrPixel** classifies artwork as **Traditional** or **Digital** using Convolutional Neural Networks.
 
-Unlike typical image classification tasks that focus on *what* is in an image, this project focuses on **how the image was created**.
+Unlike typical image classification that focuses on *what* is in an image, this project focuses on **how the image was created** — framing it as a representation learning problem where low-level features matter more than object semantics.
 
 The model learns subtle visual cues such as:
-- paper texture and grain  
-- stroke irregularity  
-- noise patterns  
-- gradient smoothness  
-- edge sharpness  
-
-This frames the task as a **representation learning problem**, where low-level features matter more than object semantics.
+- Paper texture and grain
+- Stroke irregularity
+- Noise patterns
+- Gradient smoothness
+- Edge sharpness
 
 ---
 
@@ -29,52 +27,67 @@ To build a model that distinguishes artistic medium using texture-level characte
 ## 🧠 Approach
 
 ### Data Processing
-- Custom dataset of digital vs traditional artwork  
-- Train / validation / test split  
+- Custom dataset of digital vs. traditional artwork
+- Train / validation / test split
 - Data augmentation (rotation, flipping, color jitter)
 
 ### Models
 
-#### 🔹 Baseline CNN  
-A simple CNN to establish baseline performance.
+#### 🔹 Baseline CNN
+A simple custom convolutional neural network trained from scratch to establish a performance baseline.
 
-#### 🔹 Transfer Learning (ResNet18)  
-- Adapted for binary classification  
-- Fine-tuned final layers  
-- Used when pretrained weights are available  
+#### 🔹 Transfer Learning (ResNet18)
+- Pretrained on ImageNet, adapted for binary classification
+- Fine-tuned final layers
+- Used when pretrained weights are available
 
 ---
 
 ## ⚙️ Tech Stack
 
-- Python  
-- PyTorch  
-- Torchvision  
-- NumPy  
-- Matplotlib  
+- Python 3.x
+- PyTorch
+- Torchvision
+- NumPy
+- Matplotlib
 
 ---
 
 ## 📊 Results
 
-| Test Case | Prediction | Confidence |
-|----------|-----------|-----------|
-| Image 1 | Digital | **87.44%** |
-| Image 2 | Traditional | **58.03%** |
+| Test Case | Prediction  | Confidence  |
+|-----------|-------------|-------------|
+| Image 1   | Digital     | **87.44%**  |
+| Image 2   | Traditional | **58.03%**  |
 
 ### Observations
-- High confidence on clear cases  
-- Moderate confidence on ambiguous images  
-- Performance limited by dataset size and training constraints  
+- High confidence on clear examples
+- Moderate confidence on ambiguous images (e.g. clean line art)
+- Performance limited by dataset size and training constraints
 
 ---
 
-## Project Structure
+## 🧪 Example Usage
+
+```bash
+python main.py predict --image path/to/image.jpg
+```
+
+**Output:**
+```
+Prediction: traditional
+Confidence: 57.91%
+```
+
+---
+
+## 📂 Project Structure
 
 ```
 InkOrPixel/
 │
 ├── main.py
+├── prepare_data.py
 ├── requirements.txt
 ├── README.md
 │
@@ -84,7 +97,7 @@ InkOrPixel/
 │   ├── evaluate.py
 │   ├── dataset.py
 │   ├── model.py
-│   └── config.py
+│   ├── config.py
 │   └── predict.py
 │
 ├── data/
@@ -93,43 +106,62 @@ InkOrPixel/
 │
 ├── outputs/
 │   ├── models/
-│   └── plots/
+│   ├── plots/
+│   └── predictions/
 │
 ├── notebooks/
-│
 └── assets/
 ```
----
-
-## 🎯 Objective
-
-To design and train deep learning models that classify artistic medium based on texture-level characteristics.
 
 ---
 
-## 🧠 Models
+## 🚀 How to Run
 
-### Baseline CNN  
-A custom convolutional neural network implemented to establish a performance baseline.
+### 1. Prepare dataset
+```bash
+python prepare_data.py
+```
 
-### Transfer Learning (ResNet18)  
-A pretrained ResNet model adapted for binary classification to improve feature extraction and generalization.
+### 2. Train model
+```bash
+python main.py train
+```
+
+### 3. Evaluate model
+```bash
+python main.py evaluate
+```
+
+### 4. Predict on a new image
+```bash
+python main.py predict --image path/to/image.jpg
+```
+
+---
+
+## ⚠️ Challenges
+
+- Small dataset leading to overfitting
+- SSL issue preventing consistent pretrained weight usage
+- Difficulty distinguishing clean line art from digital artwork
 
 ---
 
-## ⚙️ Tech Stack
+## 🔮 Future Improvements
 
-- Python 3.x  
-- PyTorch  
-- Torchvision  
-- NumPy  
-- Matplotlib  
+- Larger and more diverse dataset
+- Full fine-tuning of deeper ResNet layers
+- Improved preprocessing for texture detection
 
 ---
 
-## 📂 Current Status
+## 💡 Key Takeaway
 
-Project setup and model scaffolding in progress.  
-Training and evaluation pipeline under development.
+InkOrPixel demonstrates that neural networks can learn *how an image was created*, not just *what it contains* — even with limited data.
 
 ---
+
+## 👩‍💻 Author
+
+**Aditi Putrevu**
+Northeastern University — Master's in Computer Science
