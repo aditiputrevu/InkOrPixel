@@ -1,11 +1,13 @@
 import os
 import torch
+
 from .dataset import get_dataloaders
 from .model import get_model
-from .config import MODEL_DIR
+from .config import MODEL_DIR, DEVICE
+
 
 def evaluate_model():
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = DEVICE
 
     _, _, test_loader, classes = get_dataloaders()
 
